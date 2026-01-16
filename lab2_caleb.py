@@ -127,7 +127,7 @@ def ask_day_and_trip():
 while cycle_break == False:
     day_today, trip_duration, cycle_break = ask_day_and_trip()
 
-day_return = (day_today + (trip_duration % 7)) % 7
+day_return = (day_today + trip_duration) % 7
 print(f"Your trip starts on day {day_today}, lasts {trip_duration} days. You are back on day {day_return}.")
 
 
@@ -142,4 +142,5 @@ print(f"Your trip starts on day {day_today}, lasts {trip_duration} days. You are
 # 2. upload your lab2 python file to your GitHub "comp115" repository.
 # 3. submit your github comp115 repo link on the e-learn.
 # Great job. Congratulations on finishing your lab2!
+
 #---------------------------------------------------------
