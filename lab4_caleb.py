@@ -159,7 +159,7 @@ def draw_picture_nice():
     tracy = turtle.Turtle()
     tracy.speed(0)
     colors = ['white', 'yellow', 'blue', 'orange', 'red']
-    decrease_amounts = [4, 10, 5, 19, 20]
+    decrease_amounts = [4, 5, 10, 19, 20]
     for i in range(5):
         tracy.color(colors[i])
         draw_special(tracy, 100, decrease_amounts[i], 10)
@@ -210,4 +210,5 @@ After finishing your lab, please upload the file to GitHub and copy paste the li
 to your e-learn.
 
 Hope this lab is helpful to your project 1 - Artistic Turtle Drawing. Have fun!
+
 """
