@@ -178,10 +178,7 @@ Uncomment the unit tests below to verify your function implementation.
 
 # Function implementation 
 def add_number(nums, k):
-    num_list = []
-    for num in nums:
-        num_list.append(num + k)
-    return num_list
+    return [num + k for num in nums]
 
 
 assert add_number([2, 4, 1], 5) == [7, 9, 6]
@@ -208,10 +205,7 @@ Uncomment the unit tests below to verify your function implementation.
 
 # Function implementation
 def squares(nums):
-    square_list = []
-    for num in nums:
-        square_list.append(num**2)
-    return square_list
+    return [num**2 for num in nums]
 
 
 assert squares([2, 3, 4]) == [4, 9, 16]
@@ -240,11 +234,7 @@ Uncomment the unit tests below to verify your function implementation.
 
 # Function implementation 
 def repeat_elements(nums):
-    double_num_list = []
-    for num in nums:
-        for _ in range(2):
-            double_num_list.append(num)
-    return double_num_list
+    return [num for num in nums for _ in range(2)]
 
 
 assert repeat_elements([1, 2, 3, 4]) == [1, 1, 2, 2, 3, 3, 4, 4]
