@@ -1,0 +1,1 @@
+cave_depth = {i: f"cave depth {i}" for i in range(20)}
